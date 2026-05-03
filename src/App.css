@@ -6,7 +6,8 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #ffffff;
+  color: #000000;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -18,10 +19,9 @@ body {
 }
 
 .container {
-  background: white;
+  background: #ffffff;
   padding: 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 2px solid #000000;
   width: 100%;
   max-width: 420px;
   margin: 2rem auto;
@@ -30,7 +30,9 @@ body {
 .container h1 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: #000000;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 form {
@@ -41,75 +43,100 @@ form {
 
 input {
   padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 0;
   font-size: 1rem;
   outline: none;
-  transition: border-color 0.2s;
+  transition: background 0.15s, color 0.15s;
+}
+
+input::placeholder {
+  color: #666666;
 }
 
 input:focus {
-  border-color: #667eea;
+  background: #000000;
+  color: #ffffff;
+}
+
+input:focus::placeholder {
+  color: #cccccc;
 }
 
 button {
   padding: 0.85rem;
-  background: #667eea;
-  color: white;
-  border: none;
-  border-radius: 6px;
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0;
   font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background 0.15s, color 0.15s;
 }
 
 button:hover {
-  background: #5568d3;
+  background: #ffffff;
+  color: #000000;
 }
 
 .erro {
-  color: #d32f2f;
-  background: #ffebee;
+  color: #ffffff;
+  background: #000000;
   padding: 0.75rem;
-  border-radius: 6px;
   margin-top: 1rem;
   text-align: center;
+  border: 1px solid #000000;
 }
 
 .mensagem {
-  color: #2e7d32;
-  background: #e8f5e9;
+  color: #000000;
+  background: #ffffff;
   padding: 0.75rem;
-  border-radius: 6px;
   margin-top: 1rem;
   text-align: center;
+  border: 1px solid #000000;
 }
 
 p {
   margin-top: 1rem;
   text-align: center;
-  color: #555;
+  color: #000000;
 }
 
 a {
-  color: #667eea;
-  text-decoration: none;
-  font-weight: 500;
+  color: #000000;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 a:hover {
-  text-decoration: underline;
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .dados-usuario {
-  background: #f5f5f5;
+  background: #ffffff;
   padding: 1.5rem;
-  border-radius: 8px;
   margin-bottom: 1.5rem;
+  border: 1px solid #000000;
 }
 
 .dados-usuario p {
   text-align: left;
   margin: 0.5rem 0;
-  color: #333;
+  color: #000000;
+}
+
+.dados-usuario strong {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.15rem;
 }
